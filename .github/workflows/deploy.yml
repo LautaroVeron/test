@@ -17,14 +17,5 @@ jobs:
             port: ${{ secrets.SSH_PORT }}
             script: |
               whoami
-
-        - name: Checkout repository
-          uses: actions/checkout@v2
-        
-        - name: Set up Docker Buildx
-          uses: docker/setup-buildx-action@v1
-        
-        - name: Build and run Docker containers
-          run: |
-                cd ${{ github.workspace }}
-                docker-compose up -d
+              sudo apt-get update && sudo apt-get upgrade -y
+              docker compose up -d
