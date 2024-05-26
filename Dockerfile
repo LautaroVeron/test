@@ -5,7 +5,6 @@ FROM node:latest
 WORKDIR /app
 
 # Copia los archivos de tu aplicación al directorio de trabajo
-COPY package.json ./
 COPY server.js ./
 COPY index.html ./
 
