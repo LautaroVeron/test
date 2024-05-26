@@ -18,4 +18,4 @@ jobs:
             script: |
               whoami
               sudo apt-get update && sudo apt-get upgrade -y
-              docker compose up -d
+              docker-compose up -d
