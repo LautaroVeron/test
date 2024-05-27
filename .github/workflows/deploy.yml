@@ -16,7 +16,4 @@ jobs:
             key: ${{ secrets.SSH_PRIVATE_KEY }}
             port: ${{ secrets.SSH_PORT }}
             script: |
-              cd /root/test
-              whoami
-              sudo apt-get update && sudo apt-get upgrade -y
-              docker compose up -d
+               whoami
