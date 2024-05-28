@@ -17,3 +17,4 @@ jobs:
             port: ${{ secrets.SSH_PORT }}
             script: |
                cd /root/test/ && git pull
+               sudo docker compose up -d
