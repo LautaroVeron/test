@@ -17,4 +17,9 @@ jobs:
             port: ${{ secrets.SSH_PORT }}
             script: |
                cd /root/test/
-               sudo docker compose up --build
+               git pull
+               ls -la
+               cat docker-compose.yml
+               sudo docker compose down
+               sudo docker compose build
+               sudo docker compose up -d
