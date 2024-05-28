@@ -18,5 +18,3 @@ jobs:
             script: |
                cd /root/test/
                sudo docker compose up --build
-               git pull
-
